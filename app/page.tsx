@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div>
       {/* Hero Section */}
       <HeroSection 
         badge={{

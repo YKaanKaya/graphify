@@ -24,10 +24,10 @@ export default function SettingsPage() {
   };
 
   return (
-    <div className="container mx-auto py-8 px-4">
+    <div className="p-8">
       <h1 className="text-2xl font-bold mb-8">API Keys & Security</h1>
       
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl">
         <div className="bg-white border rounded-lg shadow-sm p-6 mb-6">
           <div className="flex items-start mb-4">
             <Key className="text-blue-500 mt-1 mr-3 h-5 w-5" />

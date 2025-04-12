@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Database, LayoutDashboard, ArrowRightCircle, Settings } from "lucide-react";
+import { Database, ArrowRightCircle, Settings } from "lucide-react";
 
 export default function ConnectionsLayout({
   children,
@@ -25,19 +25,9 @@ export default function ConnectionsLayout({
   ];
 
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-[calc(100vh-4rem)]">
       {/* Sidebar */}
       <div className="w-64 bg-gray-50 border-r border-gray-200 flex flex-col">
-        <div className="p-4 border-b border-gray-200">
-          <Link
-            href="/"
-            className="flex items-center gap-2 text-blue-600 hover:text-blue-700"
-          >
-            <LayoutDashboard className="h-5 w-5" />
-            <span className="font-medium">GraphFlow ETL</span>
-          </Link>
-        </div>
-        
         <nav className="flex-1 p-4">
           <p className="text-xs font-medium text-gray-500 mb-2 uppercase tracking-wider">
             Connections
